@@ -10,10 +10,12 @@ source:
   fn: {{ name }}-{{ version }}.zip
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
   sha256: {{ sha256 }}
+  patches:
+    - always-packagedata.patch
 
 build:
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
   entry_points:
     - dxfpp = ezdxf.pp.__main__:main
@@ -33,6 +35,7 @@ test:
   commands:
     - dxfpp --help
     - dxfaudit --help
+    - python -c 'import ezdxf; ezdxf.new()'
 
 about:
   home: http://github.com/mozman/ezdxf
