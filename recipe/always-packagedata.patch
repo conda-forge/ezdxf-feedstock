@@ -1,12 +1,12 @@
 diff -Naru ezdxf-0.8.9/setup.py ezdxf-0.8.9-fixed/setup.py
 --- ezdxf-0.8.9/setup.py	2018-11-28 14:00:32.000000000 +0100
-+++ ezdxf-0.8.9-fixed/setup.py	2019-01-09 16:24:28.023483895 +0100
-@@ -11,7 +11,7 @@
- AUTHOR_NAME = 'Manfred Moitzi'
- AUTHOR_EMAIL = 'me@mozman.at'
- 
--if PY3:
-+if True:
-     PACKAGE_DATA = {'ezdxf': ['templates/*.dxf', 'pp/*.html', 'pp/*.js', 'pp/*.css', ]}
++++ ezdxf-0.8.9-fixed/setup.py	2019-01-09 17:56:24.708267754 +0100
+@@ -16,7 +16,7 @@
  else:
      # Python 2.7: package_data seems to be broken
+     # added required data to MANIFEST.in
+-    PACKAGE_DATA = dict()
++    PACKAGE_DATA = {str('ezdxf'): [str('templates/*.dxf'), str('pp/*.html'), str('pp/*.js'), str('pp/*.css'), ]}
+ 
+ 
+ def read(fname, until=""):
