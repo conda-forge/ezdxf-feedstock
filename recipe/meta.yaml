@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.8.9" %}
-{% set sha256 = "abf80f507aaaf173d98e9154aa64471e801d69e68c32cf4a404d02cc00c9ed89" %}
+{% set version = "0.9" %}
+{% set sha256 = "401cca861a04ffdc3a9ae46af6aa6c0ee6009cd5dfecf7220389ee866f8131bd" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     - always-packagedata.patch
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
   entry_points:
