@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.9" %}
-{% set sha256 = "401cca861a04ffdc3a9ae46af6aa6c0ee6009cd5dfecf7220389ee866f8131bd" %}
+{% set version = "0.10" %}
+{% set sha256 = "d61ddc6c9163e079e2a25c10f172429e04f03d679d9d31ee56ef222c01053f0e" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,6 @@ build:
   noarch: python
   entry_points:
     - dxfpp = ezdxf.pp.__main__:main
-    - dxfaudit = ezdxf.audit.__main__:main
 
 requirements:
   build:
@@ -32,7 +31,6 @@ test:
     - ezdxf
   commands:
     - dxfpp --help
-    - dxfaudit --help
     - python -c 'import ezdxf; ezdxf.new()'
 
 about:
