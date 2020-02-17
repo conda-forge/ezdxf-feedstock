@@ -20,10 +20,10 @@ build:
 
 requirements:
   build:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - pyparsing >=2.0.1
 
 test:
