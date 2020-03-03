@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.11" %}
-{% set sha256 = "2e3338425ae62160e9eede86723c35f2c8585d1f8d93f5386d6279b7f9d589a8" %}
+{% set version = "0.11.1" %}
+{% set sha256 = "1b0ab9656940812ac86050d6c1b927740be01533d6bfc639b0eb574af0969a68" %}
 
 package:
   name: {{ name|lower }}
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'A Python package to create/manipulate DXF drawings.'
+  summary: A Python package to create/manipulate DXF drawings.
   description: |
     A Python package to create and modify DXF drawings, independent from the DXF version. You can open/save every DXF file without loosing any content (except comments), Unknown tags in the DXF file will be ignored but preserved for saving. With this behavior it is possible to open also DXF drawings that contains data from 3rd party applications.    
 
