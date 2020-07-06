@@ -5,7 +5,7 @@ Home: http://github.com/mozman/ezdxf
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python package to create/manipulate DXF drawings.
 
