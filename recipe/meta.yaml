@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.14.1" %}
-{% set sha256 = "fdd88d188861113ea4e0af3a7c742065c9f44c4ce1e4368936b34421b47a8a0b" %}
+{% set version = "0.14.2" %}
+{% set sha256 = "acb4dbd980dce755304cbf83693a60b5f6cec8de1a45ce3d14662077ffbcc431" %}
 
 package:
   name: {{ name|lower }}

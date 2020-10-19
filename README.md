@@ -5,9 +5,13 @@ Home: http://github.com/mozman/ezdxf
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ezdxf-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python package to create/manipulate DXF drawings.
+
+Development: http://github.com/mozman/ezdxf
+
+Documentation: https://pythonhosted.org/ezdxf
 
 A Python package to create and modify DXF drawings, independent from the DXF version. You can open/save every DXF file without loosing any content (except comments), Unknown tags in the DXF file will be ignored but preserved for saving. With this behavior it is possible to open also DXF drawings that contains data from 3rd party applications.
 
