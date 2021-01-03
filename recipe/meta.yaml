@@ -33,7 +33,7 @@ test:
     - ezdxf
   commands:
     - dxfpp --help
-    - python -c 'import ezdxf; ezdxf.new()'
+    - python -c "import ezdxf; ezdxf.new()"
 
 about:
   home: http://github.com/mozman/ezdxf
