@@ -14,14 +14,16 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  noarch: python
   entry_points:
     - dxfpp = ezdxf.pp.__main__:main
 
 requirements:
+  build:
+    - {{ compiler('cxx') }}
   host:
     - python >=3.6
     - pip
+    - cython
   run:
     - python >=3.6
     - pyparsing >=2.0.1
