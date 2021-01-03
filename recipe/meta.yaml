@@ -21,11 +21,11 @@ requirements:
   build:
     - {{ compiler('cxx') }}
   host:
-    - python >=3.6
+    - python
     - pip
     - cython
   run:
-    - python >=3.6
+    - python
     - pyparsing >=2.0.1
 
 test:
