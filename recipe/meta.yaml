@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.14.2" %}
-{% set sha256 = "acb4dbd980dce755304cbf83693a60b5f6cec8de1a45ce3d14662077ffbcc431" %}
+{% set version = "0.15" %}
+{% set sha256 = "655d87b05f1295fa07da0abf772e47d29e4dc74cebdc0c72177b9c99d820d51a" %}
 
 package:
   name: {{ name|lower }}
@@ -14,16 +14,18 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  noarch: python
   entry_points:
     - dxfpp = ezdxf.pp.__main__:main
 
 requirements:
   build:
-    - python >=3.6
+    - {{ compiler('cxx') }}
+  host:
+    - python
     - pip
+    - cython
   run:
-    - python >=3.6
+    - python
     - pyparsing >=2.0.1
 
 test:
