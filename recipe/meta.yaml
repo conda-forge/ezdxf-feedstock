@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.15.1" %}
-{% set sha256 = "5b0d5826f8e2709f6a6cd01062d1c66731dacff9ec16b9da9cb85c65261d42d9" %}
+{% set version = "0.15.2" %}
+{% set sha256 = "d026634dbd5ac1e9ec5397d3ebc2850ed96ea0ddefd30b32cb5ad2e99a85bbec" %}
 
 package:
   name: {{ name|lower }}
@@ -14,6 +14,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  skip: true  # [py<37]
   entry_points:
     - dxfpp = ezdxf.pp.__main__:main
 
