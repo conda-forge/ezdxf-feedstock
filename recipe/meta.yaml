@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py<37]
   entry_points:
-    - dxfpp = ezdxf.pp.__main__:main
+    - ezdxf = ezdxf.__main__:main
 
 requirements:
   build:
@@ -33,7 +33,7 @@ test:
   imports:
     - ezdxf
   commands:
-    - dxfpp --help
+    - ezdxf --help
     - python -c "import ezdxf; ezdxf.new()"
 
 about:
