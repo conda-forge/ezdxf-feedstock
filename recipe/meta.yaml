@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.16.4" %}
-{% set sha256 = "a98587aee006c28d1d01f45f6d7d51fbdced46778a639a15b9bbad6b3c7d9832" %}
+{% set version = "0.16.5" %}
+{% set sha256 = "ae54d6f0698188f005f908e93f957640c71701b6c71fabf57d35179398714599" %}
 
 package:
   name: {{ name|lower }}
@@ -28,6 +28,7 @@ requirements:
   run:
     - python
     - pyparsing >=2.0.1
+    - typing_extensions
 
 test:
   imports:
