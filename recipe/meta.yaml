@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "0.17.2" %}
-{% set sha256 = "0bd6c6c4f4f4eb98e915c2823b4d17fef3dd8b5de0b77107bc3c08b234e686fa" %}
+{% set version = "0.18" %}
+{% set sha256 = "3f3f2856a86431329d48e1675c3a8be502faa0ce5f5a97f9218e19fd6e255d36" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py<37]
   entry_points:
