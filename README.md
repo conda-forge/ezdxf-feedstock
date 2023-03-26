@@ -1,11 +1,11 @@
-About ezdxf
-===========
+About ezdxf-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ezdxf-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/mozman/ezdxf
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ezdxf-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python package to create/manipulate DXF drawings.
 
