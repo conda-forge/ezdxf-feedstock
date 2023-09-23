@@ -28,7 +28,8 @@ requirements:
     - python
     - pip
     - cython
-    - numpy
+    - numpy >=1.24  # [py>310]
+    - numpy  # [py<311]
     - fonttools
   run:
     - python
