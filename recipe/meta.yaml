@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "1.0.3" %}
-{% set sha256 = "7394cdc441ffdb9fc355471dbfd6b055adc6900e1138b535ee1f4e36c223a6f2" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "6bdf329a45393ada570b8e7828c840e038ac4827363b36385677171ecc693f70" %}
 
 package:
   name: {{ name|lower }}
@@ -28,10 +28,15 @@ requirements:
     - python
     - pip
     - cython
+    - numpy >=1.24  # [py>310]
+    - numpy  # [py<311]
+    - fonttools
   run:
     - python
     - pyparsing >=2.0.1
     - typing_extensions
+    - numpy
+    - fonttools
 
 test:
   imports:
