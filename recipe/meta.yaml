@@ -28,10 +28,14 @@ requirements:
     - python
     - pip
     - cython
+    - numpy
+    - fonttools
   run:
     - python
     - pyparsing >=2.0.1
     - typing_extensions
+    - numpy
+    - fonttools
 
 test:
   imports:
