@@ -29,6 +29,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - cython
     - numpy >=1.24  # [py>310]
     - numpy  # [py<311]
