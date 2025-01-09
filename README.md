@@ -275,4 +275,5 @@ Feedstock Maintainers
 =====================
 
 * [@csachs](https://github.com/csachs/)
+* [@ndevenish](https://github.com/ndevenish/)
 
