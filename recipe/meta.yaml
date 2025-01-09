@@ -1,6 +1,6 @@
 {% set name = "ezdxf" %}
-{% set version = "1.3.0" %}
-{% set sha256 = "fc761bcf767d9652fe39cf960534ab8fe2ad79d488a3365b36597e0b74260048" %}
+{% set version = "1.3.4" %}
+{% set sha256 = "d4f07a684a3adc79d2cb8168b57c60f5966c3ab641620092f36402201b960e7c" %}
 
 
 package:
@@ -29,6 +29,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - cython
     - numpy >=1.24  # [py>310]
     - numpy  # [py<311]
